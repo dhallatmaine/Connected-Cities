@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println(routeManager.connected("New York", "D.C."));
         System.out.println(routeManager.connected("New York", "Cincinatti"));
-        printRoute(routeManager.getRoute("New York", "D.C."));
+        printRoute(routeManager.getRoute("New York", "New York"));
         printRoute(routeManager.getRoute("D.C.", "New York"));
         printRoute(routeManager.getRoute("New York", "Cincinatti"));
         System.out.println(routeManager.connected("Baltimore", "Boston"));
