@@ -5,21 +5,18 @@ public class FirstRouteManagerImpl implements RouteManager {
     private Map<String, Set<String>> cities = new HashMap<>();
 
     public boolean connected(String city1, String city2) {
-        return contains(city1, city2) && bfs(city1, city2).isEmpty();
+        return bfs(city1, city2).isEmpty();
     }
 
     public List<String> getRoute(String city1, String city2) {
-        if (! contains(city1, city2)) {
-            return Collections.EMPTY_LIST;
-        }
         return bfs(city1, city2);
     }
 
-    private boolean contains(String city1, String city2) {
-        return cities.containsKey(city1) && cities.containsKey(city2);
-    }
-
     private List<String> bfs(String city1, String city2) {
+        if (! cities.containsKey(city1) || ! cities.containsKey(city2)) {
+            return Collections.EMPTY_LIST;
+        }
+
         Queue<List<String>> queue = new LinkedList<>();
         queue.add(Arrays.asList(city1));
 
