@@ -1,0 +1,7 @@
+target
+.idea
+*.iml
+dump.rdb
+sudo
+*.class
+out

@@ -1,0 +1,4 @@
+New York,Jersey
+Jersey,D.C.
+D.C.,Atlanta
+Richmond,Cincinatti
