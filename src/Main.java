@@ -9,7 +9,7 @@ public class Main {
     static RouteManager routeManager;
 
     public static void main(String[] args) {
-        routeManager = new FirstRouteManagerImpl();
+        routeManager = new BFSRouteManagerImpl();
         List<String[]> cities = readFile(args[0]);
 
         for (String[] city : cities) {

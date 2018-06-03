@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class FirstRouteManagerImpl implements RouteManager {
+public class BFSRouteManagerImpl implements RouteManager {
 
     private Map<String, Set<String>> cities = new HashMap<>();
 
